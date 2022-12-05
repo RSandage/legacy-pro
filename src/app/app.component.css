@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap");
 
+.window {
+  display: flex;
+  flex-direction: column;
+}
+
 div {
   background-color: #4a912b;
 }
@@ -10,6 +15,7 @@ div {
 
 header {
   position: fixed;
+  padding-bottom: 2rem;
 }
 
 * {
@@ -33,7 +39,7 @@ header {
 .title {
   padding-left: 25px;
   margin-right: auto;
-  font-family: "Corinthia", sans-serif;
+  /* font-family: "Corinthia", sans-serif; */
   font-weight: 700;
   font-size: 45px;
   /* color: whitesmoke; */
