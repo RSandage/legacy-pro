@@ -1,0 +1,56 @@
+h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 4rem auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.75rem;
+  color: whitesmoke;
+}
+
+input {
+  background: grey;
+  border: none;
+  border-bottom: 3px solid black;
+  color: black;
+  font-size: 1.25rem;
+}
+
+::placeholder {
+  font-size: 1.25rem;
+  color: lightcyan
+}
+
+.button {
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(0, 136, 169, 1);
+  color: black;
+  border-radius: 2rem;
+  border: none;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 540px) {
+  .form {
+    max-width: 75%;
+  }
+
+  .submit {
+    justify-content: center;
+  }
+}
