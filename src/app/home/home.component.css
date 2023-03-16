@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 5%;
 }
 
 .picture {
@@ -21,7 +22,37 @@ img {
 }
 
 .textbox {
-  padding-top: 15%;
+  padding-top: 12.5%;
   margin-left: auto;
-  margin-right: 15%;
+  margin-right: auto;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: larger;
+}
+
+@media (max-width: 1300px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .picture {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  img {
+    border-radius: 5rem;
+  }
+
+  .textbox {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
 }
