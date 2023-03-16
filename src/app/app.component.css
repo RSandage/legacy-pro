@@ -39,6 +39,10 @@ header {
   cursor: pointer;
 }
 
+.title_alt {
+  display: none;
+}
+
 li,
 a,
 button {
@@ -96,12 +100,27 @@ button:hover {
   background-color: rgba(0, 136, 169, 0.6);
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1150px) {
+  .title {
+    display: none;
+  }
+
+  .title_alt {
+    display: flex;
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
   header {
     padding-bottom: 0;
   }
 
   .title {
+    display: none;
+  }
+
+  .title_alt {
     display: none;
   }
 
