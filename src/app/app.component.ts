@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'legacy-pro';
+
+  scroll(element: HTMLElement) {
+    element.scrollIntoView({behavior: 'smooth'})
+  }
 }

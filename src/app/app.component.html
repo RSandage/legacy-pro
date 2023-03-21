@@ -6,21 +6,21 @@
         <h1 class="title_alt">Legacy Pro LLC</h1>
         <nav>
           <ul>
-            <li class="nav__link"><a>Home</a></li>
-            <li class="nav__link"><a>Services</a></li>
+            <li class="nav__link" (click)="scroll(home)"><a>Home</a></li>
+            <li class="nav__link" (click)="scroll(services)"><a>Services</a></li>
           </ul>
-          <button class="btn btn-sm">Contact</button>
+          <button class="btn btn-sm" (click)="scroll(contact)">Contact</button>
         </nav>
       </div>
     </header>
   </div>
-  <div class="row">
+  <div class="row" #home>
     <app-home></app-home>
   </div>
-  <div class="row">
+  <div class="row" #services>
     <app-services></app-services>
   </div>
-  <div class="row">
+  <div class="row" #contact>
     <app-contact></app-contact>
   </div>
 </div>
